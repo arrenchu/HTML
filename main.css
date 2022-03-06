@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(180, 175, 189);
+ }
+
+ ul { 
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: #333;
+     left: 0;
+ }
+
+ li { 
+     float: right; 
+
+     }
+
+li a { 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li:hover { 
+    background-color: rgba(0,0,0,0.2);
+}
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Crear 2 columnas con la misma posición en la fila */
+nav {
+    float: left;
+    width: 20%;
+    height: 600px;
+    /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 0px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 600px;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.active { 
+    background-color: #1f7e69;
+}
+
+.content { 
+    margin-top: 55px;
+}
+
+.logo 
+{
+    float: left;
+}
+
+.position {
+    text-align: center;
+}
+
+.columna
+{ 
+    float: left;
+    width: 33.33%;
+    height: 250px;
+    /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 0px;
+}
+
+.columna2 
+{ 
+     float: left;
+    width: 100%;
+    height: 180px;
+    /* only for demonstration, should be removed */
+    background: rgb(163, 216, 128);
+    padding: 0px;
+}
